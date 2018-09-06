@@ -53,6 +53,9 @@
                                 <state key="normal" title="Save Places">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createNewPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWq-eY-wqJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +77,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Location" image="1517-plus-1" id="zNF-SL-9TM"/>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="JmX-0S-loY" id="myf-1s-ppA"/>
+                        <outlet property="longitudeTextField" destination="fZz-vW-blP" id="yop-lM-LZm"/>
+                        <outlet property="nameTextField" destination="DDo-9f-OI2" id="Fk8-MQ-eti"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
