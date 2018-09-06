@@ -19,6 +19,7 @@
 		F11FB4CA214197950096A7CE /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4C9214197950096A7CE /* PlacesTableViewController.swift */; };
 		F11FB4CC214197EE0096A7CE /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4CB214197EE0096A7CE /* VisitedPlacesViewController.swift */; };
 		F11FB4CE214198040096A7CE /* CreateNewPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4CD214198040096A7CE /* CreateNewPlacesViewController.swift */; };
+		F11FB4D02141994B0096A7CE /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4CF2141994B0096A7CE /* PlaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F11FB4C9214197950096A7CE /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		F11FB4CB214197EE0096A7CE /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 		F11FB4CD214198040096A7CE /* CreateNewPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlacesViewController.swift; sourceTree = "<group>"; };
+		F11FB4CF2141994B0096A7CE /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F11FB4C22141954B0096A7CE /* Place.swift */,
+				F11FB4CF2141994B0096A7CE /* PlaceController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11FB4C32141954B0096A7CE /* Place.swift in Sources */,
+				F11FB4D02141994B0096A7CE /* PlaceController.swift in Sources */,
 				F11FB4CC214197EE0096A7CE /* VisitedPlacesViewController.swift in Sources */,
 				F11FB4CE214198040096A7CE /* CreateNewPlacesViewController.swift in Sources */,
 				F11FB4A921418A620096A7CE /* AppDelegate.swift in Sources */,
