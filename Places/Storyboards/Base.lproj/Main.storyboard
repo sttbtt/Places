@@ -14,7 +14,7 @@
         <!--Add Location-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CreateNewPlacesViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
         <!--Places-->
         <scene sceneID="iPS-mS-lex">
             <objects>
-                <viewController id="Aua-6o-Tyf" sceneMemberID="viewController">
+                <viewController id="Aua-6o-Tyf" customClass="VisitedPlacesViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Pt-f2-8aA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1832" y="595"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Places Tab Bar Controller-->
         <scene sceneID="s6G-aC-Orp">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ePG-af-WEP" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ePG-af-WEP" customClass="PlacesTabBarController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dda-2A-F7J">
                         <autoresizingMask key="autoresizingMask"/>
