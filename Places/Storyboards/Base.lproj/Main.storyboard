@@ -73,13 +73,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Location" id="zNF-SL-9TM"/>
+                    <tabBarItem key="tabBarItem" title="Add Location" image="1517-plus-1" id="zNF-SL-9TM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1113" y="-129"/>
         </scene>
-        <!--View Controller-->
+        <!--Places-->
         <scene sceneID="iPS-mS-lex">
             <objects>
                 <viewController id="Aua-6o-Tyf" sceneMemberID="viewController">
@@ -105,6 +105,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5Uh-7J-Q21"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Places" image="1689-globe" id="S45-fx-6Bg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnw-gI-Mtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,6 +138,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fCR-LU-jcN"/>
+                        <segue destination="Aua-6o-Tyf" kind="relationship" relationship="viewControllers" id="1gc-ns-Mhp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzy-z2-eEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,4 +146,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1517-plus-1" width="21" height="21"/>
+        <image name="1689-globe" width="23" height="23"/>
+    </resources>
 </document>
