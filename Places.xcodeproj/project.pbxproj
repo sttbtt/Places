@@ -20,6 +20,7 @@
 		F11FB4CC214197EE0096A7CE /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4CB214197EE0096A7CE /* VisitedPlacesViewController.swift */; };
 		F11FB4CE214198040096A7CE /* CreateNewPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4CD214198040096A7CE /* CreateNewPlacesViewController.swift */; };
 		F11FB4D02141994B0096A7CE /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4CF2141994B0096A7CE /* PlaceController.swift */; };
+		F11FB4D221419CEC0096A7CE /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB4D121419CEC0096A7CE /* PlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F11FB4CB214197EE0096A7CE /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 		F11FB4CD214198040096A7CE /* CreateNewPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlacesViewController.swift; sourceTree = "<group>"; };
 		F11FB4CF2141994B0096A7CE /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
+		F11FB4D121419CEC0096A7CE /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F11FB4C1214195370096A7CE /* Model */,
 				F11FB4BB21418C450096A7CE /* Storyboards */,
 				F11FB4C62141971D0096A7CE /* View Controllers */,
+				F11FB4D321419D060096A7CE /* Portocols */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -118,6 +121,14 @@
 				F11FB4CD214198040096A7CE /* CreateNewPlacesViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F11FB4D321419D060096A7CE /* Portocols */ = {
+			isa = PBXGroup;
+			children = (
+				F11FB4D121419CEC0096A7CE /* PlacesPresenter.swift */,
+			);
+			path = Portocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11FB4C32141954B0096A7CE /* Place.swift in Sources */,
+				F11FB4D221419CEC0096A7CE /* PlacesPresenter.swift in Sources */,
 				F11FB4D02141994B0096A7CE /* PlaceController.swift in Sources */,
 				F11FB4CC214197EE0096A7CE /* VisitedPlacesViewController.swift in Sources */,
 				F11FB4CE214198040096A7CE /* CreateNewPlacesViewController.swift in Sources */,
