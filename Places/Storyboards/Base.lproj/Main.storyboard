@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,69 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDo-9f-OI2">
+                                <rect key="frame" x="16" y="141" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lmw-qg-thp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude from -90 to 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JmX-0S-loY">
+                                <rect key="frame" x="16" y="179" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="x4D-WX-p7U"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitude -180 to 180" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZz-vW-blP">
+                                <rect key="frame" x="16" y="217" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5iM-SG-Jp6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buu-dD-lDI">
+                                <rect key="frame" x="16" y="255" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Save Places">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DDo-9f-OI2" firstAttribute="leading" secondItem="JmX-0S-loY" secondAttribute="leading" id="9Jr-sm-A4t"/>
+                            <constraint firstItem="JmX-0S-loY" firstAttribute="leading" secondItem="fZz-vW-blP" secondAttribute="leading" id="AEj-R7-FEj"/>
+                            <constraint firstItem="DDo-9f-OI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J0p-EW-W29"/>
+                            <constraint firstItem="DDo-9f-OI2" firstAttribute="trailing" secondItem="JmX-0S-loY" secondAttribute="trailing" id="JmQ-G5-hQr"/>
+                            <constraint firstItem="DDo-9f-OI2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="MRq-sD-kcl"/>
+                            <constraint firstItem="fZz-vW-blP" firstAttribute="leading" secondItem="buu-dD-lDI" secondAttribute="leading" id="V07-1d-h20"/>
+                            <constraint firstItem="JmX-0S-loY" firstAttribute="trailing" secondItem="fZz-vW-blP" secondAttribute="trailing" id="hyf-tl-buY"/>
+                            <constraint firstItem="JmX-0S-loY" firstAttribute="top" secondItem="DDo-9f-OI2" secondAttribute="bottom" constant="8" symbolic="YES" id="jpf-55-aam"/>
+                            <constraint firstItem="DDo-9f-OI2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="k16-HK-t6M"/>
+                            <constraint firstItem="fZz-vW-blP" firstAttribute="trailing" secondItem="buu-dD-lDI" secondAttribute="trailing" id="kxc-kg-x83"/>
+                            <constraint firstItem="buu-dD-lDI" firstAttribute="top" secondItem="fZz-vW-blP" secondAttribute="bottom" constant="8" symbolic="YES" id="mqg-nB-oUr"/>
+                            <constraint firstItem="fZz-vW-blP" firstAttribute="top" secondItem="JmX-0S-loY" secondAttribute="bottom" constant="8" symbolic="YES" id="oXy-f7-xea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="buu-dD-lDI" secondAttribute="bottom" constant="493" id="pkA-fq-yXE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
 </document>
